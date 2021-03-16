@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { ApsiButton } from './library/Button';
+import { ApsButton } from './library/Button/Button';
 
 function App() {
+  const buttonText = 'Başla';
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +20,9 @@ function App() {
         >
           React ogrenmenin tam zamani!
         </a>
-        <ApsiButton />
+        <div className="components">
+          <ApsButton text={buttonText} />
+        </div>
       </header>
     </div>
   );
